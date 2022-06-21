@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-""" an empty python class " square " """
+"""  python class """
 class Square:
+    """an empty python class named "Square " """
     pass
