@@ -1,35 +1,29 @@
 #!/usr/bin/python3
 """
-    10-square: class Square from Rectangle
+    Square class
 """
-
-
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
     """
-        Square  inherits from Rectangle
-        Attributes:
-            size (int): side of square
-        Methods:
-            __init__ - initialises the square
+        Square Class inheriting other class
     """
     def __init__(self, size):
         """
-            initialises Square
+            Initialize the square
         """
-        self.integer_validator("size", size)
-
         self.__size = size
+        self.integer_validator('size', self.__size)
 
     def area(self):
         """
-            Returns the area of square
+        define area
         """
-        area = self.__size * self.__size
-        return area
+        return self.__size ** 2
 
     def __str__(self):
-        return ("[{}] {}/{}".format("Rectangle",
-                                    self.__size, self.__siz)
+        """
+            Usage of __str__
+        """
+        return ("[Rectangle] {}/{}".format(self.__size, self.__size))
